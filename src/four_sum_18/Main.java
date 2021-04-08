@@ -1,4 +1,4 @@
-package four_sum;
+package four_sum_18;
 
 import common.In;
 import common.StdOut;

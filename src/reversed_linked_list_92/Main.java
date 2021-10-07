@@ -9,7 +9,7 @@ public class Main {
         if (args == null || args.length == 0) throw new IllegalArgumentException("File name is null");
 
         String fileName = args[0];
-        In in = new In("src/" + reversed_linked_list_92.Main.class.getPackage().getName() + "/" + fileName);
+        In in = new In("src/" + Main.class.getPackage().getName() + "/" + fileName);
 
         int left = Integer.parseInt(in.readLine());
         int right = Integer.parseInt(in.readLine());
@@ -23,8 +23,7 @@ public class Main {
         // create node
         ListNode root = null;
         for (int i = n - 1; i >= 0; i--) {
-            ListNode temp = new ListNode(nums[i], root);
-            root = temp;
+            root = new ListNode(nums[i], root);
         }
 
         display(root);

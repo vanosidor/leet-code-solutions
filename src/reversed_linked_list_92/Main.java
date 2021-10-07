@@ -1,7 +1,6 @@
 package reversed_linked_list_92;
 
 import common.In;
-import common.StdOut;
 
 public class Main {
 

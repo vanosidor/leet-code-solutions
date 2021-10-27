@@ -10,7 +10,7 @@ public class Main {
         if (args == null || args.length == 0) throw new IllegalArgumentException("File name is null");
         String fileName = args[0];
 
-        In in = new In(new File("src/" +   Main.class.getPackage().getName() + "/" + fileName));
+        In in = new In(new File("src/" + Main.class.getPackage().getName() + "/" + fileName));
 
         Solution solution = new Solution();
 
@@ -18,29 +18,11 @@ public class Main {
 
         for (int i = 0; i < 9; i++) {
             String line = in.readLine().replaceAll("\\s+", "");
-//            String newLine = line.replace("\\s+", "");
-//            line.trim();
-            for (int j = 0; j < 9; j++ ) {
+            for (int j = 0; j < 9; j++) {
                 board[i][j] = line.charAt(j);
             }
         }
 
-
-
         StdOut.print(solution.isValidSudoku(board));
-
-//        int[] nums = in.readAllInts();
-//
-//        for (int num : nums) {
-//            StdOut.print(num);
-//        }
-//
-//        Solution solution = new Solution();
-//        solution.moveZeroes(nums);
-//
-//        StdOut.println("\nresult:");
-//        for (int num : nums) {
-//            StdOut.print(num);
-//        }
     }
 }

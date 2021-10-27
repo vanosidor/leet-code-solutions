@@ -1,17 +1,16 @@
-package reverseinteger_7;
-
-
+package reverse_integer_7;
 //2147483647 here overflowing
 //-2147483648
-
 
 class Solution {
     public int reverse(int x) {
         int left = x;
         int i = 0;
-        int digit = 0;
-//    	System.out.print(746384741 * 10); //overflow
+        int digit;
+
+//    	System.out.print(746384741 * 10);
 //    	return 0;
+
         long res = 0;
         while (left != 0) {
             digit =(int)((x % Math.pow(10, i + 1)) / Math.pow(10, i));

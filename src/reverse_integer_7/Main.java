@@ -1,4 +1,4 @@
-package reverseinteger_7;
+package reverse_integer_7;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package reversed_linked_list_92;
+package reversed_linked_list_II_92;
 
 import common.In;
 
